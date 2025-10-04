@@ -1,0 +1,8 @@
+.nav-links {
+    display: inline-block;
+    gap: 150px;
+}
+main {
+    padding: 20px;
+    font-size: 18px;
+}

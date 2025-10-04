@@ -1,0 +1,198 @@
+/* Reset default margin and padding */
+*{
+margin: 0; /* removes browser default margin*/
+    padding: 0; /* removes default margins*/
+    box-sizing: border-box; /* includes padding & border in elements width/height*/
+     
+} 
+    
+
+/*body styling */
+body{
+    font-family: Arial, sans-serif; /* sets the default font for page */
+    line-height: 1.6; /* sets spacing between lines of text */
+    background-color: white;
+    color: black; /* text color*/
+    padding: 10px; /* adds padding inside the body */
+}
+
+/* -------------------------------NAVIGATION BAR HOME ----------------------------------- */
+.navbar {
+    background-color: rgb(57, 57, 57);
+    padding: 10px 20px;
+    overflow: hidden;
+   text-align: left;/*centers content on smaller screens */
+}
+
+/* logo image in navigation bar*/
+.logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%; /*makes it round*/
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+/*gaps and arrangement of links*/
+.nav-links {
+    list-style: none; /*removes bullets */
+    display: inline-block; /* arranges links in a row */
+    vertical-align: middle; /* space between links */
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-links li {
+    display: inline-block; /* keep links horizontal */
+    margin: 0 135px;
+}
+
+/*styling the links */
+.nav-links a {
+    color: white;
+    text-decoration: none; /* removes underline */
+    font-size: 16px; /* link text size */
+    font-weight: 500; /* medium bold */
+}
+
+.nav-links a:hover, 
+.nav-links a:visited {
+    color: white;
+    text-decoration:underline; /* underline on hover */
+}
+
+/*Header styling */
+header{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    color: black;
+}
+
+/* ------------------MAIN CONTENT------------------- */
+main {
+    padding: 20px;
+}
+/*----------------------HOME FOOTER-----------------------*/
+.home-footer{
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 400px;
+    width: 100%;
+}
+/* ------------------ABOUT ME PAGE------------------- */
+main img{
+    margin: 10px 0;
+    border-radius: 0px; /* rounded corners */
+    border: 2px solid rgb(73, 73, 73);
+}
+
+video{
+    margin-top: 10px;
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+.about-footer{
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 0px;
+    width: 100%;
+}
+html, body {
+    margin:0;
+    padding: 0;
+    min-height: 100%;
+}
+
+
+/*------------CONTACT PAGE-----------------*/
+.contact-page {
+    font-family: Arial, sans-serif;
+    background: rgb(244, 244, 228);
+    margin: 0;
+    padding: 0;
+}
+
+.contact-page h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-page #contact-form{
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-page #contact-form label {
+    display: block;
+    margin-top:10px;
+    font-weight: 600 ;
+}
+
+.contact-page #contact-form button {
+    margin-top: 15px;
+    padding: 12px;
+    width: 100%;
+    background: blue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* ------------------PROJECTS PAGE------------------- */
+
+.projects-container {
+    max-width: 1000px; /* keeps the grid from being too wide */
+    margin: 40px auto; /* centers container + space above/below */
+    padding: 20px; /* space inside the container */
+    display: grid; /* turns this into a CSS grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    /* grid rule = auto fit columns, each min 300px, max take leftover space */
+    gap: 25px; /* space between cards */
+}
+
+.project {
+    background: white; /* card background color */
+    border: 1px solid #ddd; /* light border */
+    border-radius: 12px; /* rounded corners */
+    padding: 20px; /* space inside card */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* soft shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* smooth hover animation */
+}
+
+.project h2 {
+    font-size: 20px; /* title size */
+    margin-bottom: 10px; /* space under title */
+    color: #333; /* dark gray text */
+}
+
+.project p {
+    font-size: 15px; /* description size */
+    line-height: 1.6; /* spacing between lines */
+    color: #555; /* medium gray text */
+}
+
+.project:hover {
+    transform: translateY(-5px); /* card “lifts” up */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* shadow gets stronger */
+}

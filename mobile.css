@@ -1,0 +1,15 @@
+.nav-links {
+    display: block; /*stack links vertically */
+    text-align: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+}
+
+main {
+    padding: 10px;
+    font-size: 14px;
+}
