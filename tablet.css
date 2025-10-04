@@ -1,8 +1,11 @@
+/* Navigation link container styling */
 .nav-links {
-    display: inline-block;
-    gap: 50px;
+    display: inline-block; /* places links in a horizontal line */
+    gap: 50px; /* adds spacing between links */
 }
-main{
-    padding: 15px;
-    font-size: 16px;
+
+/* Main content styling */
+main {
+    padding: 15px; /* adds space inside the main content area */
+    font-size: 16px; /* sets readable font size for main text */
 }

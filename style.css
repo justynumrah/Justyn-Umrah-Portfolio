@@ -1,198 +1,197 @@
 /* Reset default margin and padding */
-*{
-margin: 0; /* removes browser default margin*/
-    padding: 0; /* removes default margins*/
-    box-sizing: border-box; /* includes padding & border in elements width/height*/
-     
+* {
+    margin: 0; /* removes browser default margin */
+    padding: 0; /* removes browser default padding */
+    box-sizing: border-box; /* ensures padding & border are included in element width/height */
 } 
-    
 
-/*body styling */
-body{
+/* Body styling */
+body {
     font-family: Arial, sans-serif; /* sets the default font for page */
-    line-height: 1.6; /* sets spacing between lines of text */
-    background-color: white;
-    color: black; /* text color*/
-    padding: 10px; /* adds padding inside the body */
+    line-height: 1.6; /* spacing between lines of text */
+    background-color: white; /* sets background color */
+    color: black; /* sets text color */
+    padding: 10px; /* adds space inside body edges */
 }
 
-/* -------------------------------NAVIGATION BAR HOME ----------------------------------- */
+/* ------------------------------- NAVIGATION BAR HOME ----------------------------------- */
 .navbar {
-    background-color: rgb(57, 57, 57);
-    padding: 10px 20px;
-    overflow: hidden;
-   text-align: left;/*centers content on smaller screens */
+    background-color: rgb(57, 57, 57); /* dark background for nav bar */
+    padding: 10px 20px; /* adds inner spacing */
+    overflow: hidden; /* prevents floating elements from overflowing */
+    text-align: left; /* aligns content to the left */
 }
 
-/* logo image in navigation bar*/
+/* Logo image in navigation bar */
 .logo {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%; /*makes it round*/
-    vertical-align: middle;
-    margin-right: 20px;
+    height: 60px; /* sets image height */
+    width: 60px; /* sets image width */
+    border-radius: 50%; /* makes it circular */
+    vertical-align: middle; /* aligns image with text */
+    margin-right: 20px; /* adds space after logo */
 }
 
-/*gaps and arrangement of links*/
+/* Gaps and arrangement of navigation links */
 .nav-links {
-    list-style: none; /*removes bullets */
-    display: inline-block; /* arranges links in a row */
-    vertical-align: middle; /* space between links */
-    margin: 0px;
-    padding: 0px;
+    list-style: none; /* removes bullets from list */
+    display: inline-block; /* arranges links horizontally */
+    vertical-align: middle; /* aligns with logo vertically */
+    margin: 0; /* removes outer spacing */
+    padding: 0; /* removes inner spacing */
 }
 
 .nav-links li {
-    display: inline-block; /* keep links horizontal */
-    margin: 0 135px;
+    display: inline-block; /* keeps list items side-by-side */
+    margin: 0 135px; /* large spacing between menu items */
 }
 
-/*styling the links */
+/* Styling the links */
 .nav-links a {
-    color: white;
+    color: white; /* text color */
     text-decoration: none; /* removes underline */
-    font-size: 16px; /* link text size */
-    font-weight: 500; /* medium bold */
+    font-size: 16px; /* text size for links */
+    font-weight: 500; /* medium bold weight */
 }
 
 .nav-links a:hover, 
 .nav-links a:visited {
-    color: white;
-    text-decoration:underline; /* underline on hover */
+    color: white; /* keeps text color consistent */
+    text-decoration: underline; /* adds underline when hovered */
 }
 
-/*Header styling */
-header{
-    text-align: center;
-    margin-top: 20px;
-    font-size: 15px;
-    color: black;
+/* Header styling */
+header {
+    text-align: center; /* centers text content */
+    margin-top: 20px; /* space above header */
+    font-size: 15px; /* text size for header */
+    color: black; /* header text color */
 }
 
-/* ------------------MAIN CONTENT------------------- */
+/* ------------------ MAIN CONTENT ------------------- */
 main {
-    padding: 20px;
-}
-/*----------------------HOME FOOTER-----------------------*/
-.home-footer{
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
-    margin-top: 400px;
-    width: 100%;
-}
-/* ------------------ABOUT ME PAGE------------------- */
-main img{
-    margin: 10px 0;
-    border-radius: 0px; /* rounded corners */
-    border: 2px solid rgb(73, 73, 73);
+    padding: 20px; /* adds space inside main section */
 }
 
-video{
-    margin-top: 10px;
-    border: 2px solid #333;
-    border-radius: 8px;
+/* ------------------ HOME FOOTER ----------------------- */
+.home-footer {
+    background: #333; /* dark footer background */
+    color: white; /* white footer text */
+    text-align: center; /* centers text horizontally */
+    padding: 30px 20px; /* space around footer content */
+    margin-top: 400px; /* pushes footer down */
+    width: 100%; /* full-width footer */
 }
 
-.about-footer{
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
-    margin-top: 0px;
-    width: 100%;
+/* ------------------ ABOUT ME PAGE ------------------- */
+main img {
+    margin: 10px 0; /* space above and below image */
+    border-radius: 0px; /* square corners */
+    border: 2px solid rgb(73, 73, 73); /* gray border */
 }
+
+video {
+    margin-top: 10px; /* space above video */
+    border: 2px solid #333; /* dark border */
+    border-radius: 8px; /* rounded corners */
+}
+
+.about-footer {
+    background: #333; /* dark background */
+    color: white; /* white text */
+    text-align: center; /* centers content */
+    padding: 30px 20px; /* space around footer */
+    margin-top: 0; /* no top margin */
+    width: 100%; /* full-width footer */
+}
+
 html, body {
-    margin:0;
-    padding: 0;
-    min-height: 100%;
+    margin: 0; /* removes default margin */
+    padding: 0; /* removes default padding */
+    min-height: 100%; /* ensures page covers full height */
 }
 
-
-/*------------CONTACT PAGE-----------------*/
+/* ------------------ CONTACT PAGE ----------------- */
 .contact-page {
-    font-family: Arial, sans-serif;
-    background: rgb(244, 244, 228);
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* sets consistent font */
+    background: rgb(244, 244, 228); /* light background color */
+    margin: 0; /* removes outer margin */
+    padding: 0; /* removes inner padding */
 }
 
 .contact-page h1 {
-    text-align: center;
-    margin-top: 20px;
+    text-align: center; /* centers main heading */
+    margin-top: 20px; /* space above heading */
 }
 
-.contact-page #contact-form{
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.contact-page #contact-form {
+    max-width: 500px; /* limits form width */
+    margin: 20px auto; /* centers form horizontally */
+    padding: 20px; /* inner spacing */
+    background: white; /* white form background */
+    border-radius: 8px; /* rounded corners */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* subtle shadow */
 }
 
 .contact-page #contact-form label {
-    display: block;
-    margin-top:10px;
-    font-weight: 600 ;
+    display: block; /* makes labels appear above inputs */
+    margin-top: 10px; /* space between fields */
+    font-weight: 600; /* semi-bold labels */
 }
 
 .contact-page #contact-form button {
-    margin-top: 15px;
-    padding: 12px;
-    width: 100%;
-    background: blue;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
+    margin-top: 15px; /* space above button */
+    padding: 12px; /* inner spacing */
+    width: 100%; /* full-width button */
+    background: blue; /* button background color */
+    border: none; /* removes default border */
+    border-radius: 5px; /* rounded corners */
+    color: white; /* button text color */
+    font-size: 16px; /* button text size */
+    cursor: pointer; /* cursor changes to hand */
 }
 
+/* General footer (used across multiple pages) */
 footer {
-    background: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    margin-top: 30px;
+    background: #333; /* dark background */
+    color: white; /* white text */
+    padding: 10px; /* inner spacing */
+    text-align: center; /* centers text */
+    margin-top: 30px; /* space above footer */
 }
 
-
-/* ------------------PROJECTS PAGE------------------- */
-
+/* ------------------ PROJECTS PAGE ------------------- */
 .projects-container {
-    max-width: 1000px; /* keeps the grid from being too wide */
-    margin: 40px auto; /* centers container + space above/below */
-    padding: 20px; /* space inside the container */
-    display: grid; /* turns this into a CSS grid layout */
+    max-width: 1000px; /* limits overall width of project grid */
+    margin: 40px auto; /* centers container and adds spacing */
+    padding: 20px; /* space inside container */
+    display: grid; /* enables grid layout */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    /* grid rule = auto fit columns, each min 300px, max take leftover space */
-    gap: 25px; /* space between cards */
+    /* automatically fits as many columns as possible, min width 300px */
+    gap: 25px; /* space between project cards */
 }
 
 .project {
-    background: white; /* card background color */
-    border: 1px solid #ddd; /* light border */
-    border-radius: 12px; /* rounded corners */
-    padding: 20px; /* space inside card */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* soft shadow */
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* smooth hover animation */
+    background: white; /* card background */
+    border: 1px solid #ddd; /* light gray border */
+    border-radius: 12px; /* smooth rounded corners */
+    padding: 20px; /* space inside each card */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* soft shadow effect */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* smooth animation on hover */
 }
 
 .project h2 {
-    font-size: 20px; /* title size */
-    margin-bottom: 10px; /* space under title */
+    font-size: 20px; /* project title size */
+    margin-bottom: 10px; /* space below title */
     color: #333; /* dark gray text */
 }
 
 .project p {
-    font-size: 15px; /* description size */
-    line-height: 1.6; /* spacing between lines */
-    color: #555; /* medium gray text */
+    font-size: 15px; /* paragraph text size */
+    line-height: 1.6; /* space between lines */
+    color: #555; /* medium gray text color */
 }
 
 .project:hover {
-    transform: translateY(-5px); /* card “lifts” up */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* shadow gets stronger */
+    transform: translateY(-5px); /* slightly lifts the card up */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* adds stronger shadow on hover */
 }

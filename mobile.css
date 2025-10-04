@@ -1,15 +1,18 @@
+/* Styles for navigation links -- mobile*/
 .nav-links {
-    display: block; /*stack links vertically */
-    text-align: center;
-    gap: 10px;
+    display: block; /* Stack links vertically for narrow screens */
+    text-align: center; /* Center-aligns the navigation links */
+    gap: 10px; /* Adds space between each link (may not apply in block layout) */
 }
 
+/* Styles for the website logo -- mobile */
 .logo {
-    height: 40px;
-    width: 40px;
+    height: 40px; /* Sets logo height */
+    width: 40px; /* Sets logo width */
 }
 
+/* Styles for the main content area -- mobile */
 main {
-    padding: 10px;
-    font-size: 14px;
+    padding: 10px; /* Adds inner spacing inside main content */
+    font-size: 14px; /* Reduces text size for smaller screens */
 }

@@ -84,4 +84,12 @@ ________________________________________________________________________________
 -Footer styling is consistent across all the pages and it adapts to the different viewports (mobile, tablet, laptop/desktops).
 _________________________________________________________________________________
 
+## References / Resources
+
+- **W3Schools** – Used for learning HTML and CSS syntax, examples, and best practices.  
+  [https://www.w3schools.com/](https://www.w3schools.com/)
+
+- **Can I Use** – Used to check browser compatibility for HTML and CSS features.  
+  [https://caniuse.com/](https://caniuse.com/)
+__________________________________________________________________________________
 END

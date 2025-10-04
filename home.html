@@ -16,23 +16,35 @@
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
     <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 601px) and (max-width: 1024px)">
     <link rel="stylesheet" href="laptop.css" media="screen and (min-width: 1025px)">
+    <!--Responsive design achieved through media queries for different screen sizes-->
+
     <style>
         /*footer styling */
-        footer {background: none; color: white; text-align:left; padding: 0px; margin-top: 250px;}
+        footer {
+            background: none;
+            color: white;
+            text-align: left;
+            padding: 0px;
+            margin-top: 250px;
+        }
+        /*Inline style used for demonstration; ideally move this to a CSS file for consistency*/
     </style>
 </head>
+
 <!--Body Section: (visible content on the page)-->
 <body>
     <!--My navigation bar-->
-    <nav class ="navbar">
+    <nav class="navbar">
         <img src="boondocks.png" alt="Boondocks avatar" class="logo">
+        <!--Alt text accurately describes the image for accessibility-->
         <!--unordered list to structure menu items hor. or vert.-->
         <ul class="nav-links">
             <!--each list item contains a link to another page-->
-            <li><a href="home.html">Home</a><!--Link to the home page--></li>
+            <li><a href="home.html" aria-current="page">Home</a><!--Link to the home page--></li>
             <li><a href="about.html">About</a><!--Link to the about page--></li>
             <li><a href="projects.html">Projects</a><!--Link to the projects page--></li>
             <li><a href="contact.html">Contact</a><!--Link to the contact page--></li>
+            <!--aria-current added to indicate the active page for screen readers-->
         </ul>
     </nav>
 
@@ -41,18 +53,24 @@
         <!--Main page heading-->
         <h1>Hello! Welcome To My Portfolio</h1>
         <!--Intro paragraph-->
-        <p>Hey! My name is Justyn Umrah and I am  a web and script development student exploring HTML5, CSS, and much more!</p>
+        <p>Hey! My name is Justyn Umrah and I am a web and script development student exploring HTML5, CSS, and much more!</p>
+        <!--Friendly introduction message about the portfolio owner-->
     </header>
     
-
+    <!--Footer section containing contact details and credits-->
     <footer class="home-footer">
-    <div style="background-color: #333; color: white; text-align: center; padding: 20px;">
-        <img src="boondocks.png" alt="My Avatar" style="width: 80px; height: 80px; border-radius: 50%;">
-        <p>My name is Justyn Umrah</p>
-        <p>Contact: <a href="mailto:justyn.umrah@ontariotechu.net" style="color: lightblue;">justyn.umrah@ontariotechu.net</a></p>
-        <p>&copy; 2025 by <strong>Justyn Umrah</strong></p>
-    </div>
-</footer>
+        <div style="background-color: #333; color: white; text-align: center; padding: 20px;">
+            <!--Inline styles used for quick layout; can be moved to CSS for consistency-->
+            <img src="boondocks.png" alt="My Avatar" style="width: 80px; height: 80px; border-radius: 50%;">
+            <!--Rounded avatar image in the footer-->
+            <p>My name is Justyn Umrah</p>
+            <!--Short identity text for recognition-->
+            <p>Contact: <a href="mailto:justyn.umrah@ontariotechu.net" style="color: lightblue;">justyn.umrah@ontariotechu.net</a></p>
+            <!--Mailto link allows users to email directly-->
+            <p>&copy; 2025 by <strong>Justyn Umrah</strong></p>
+            <!--Copyright information-->
+        </div>
+    </footer>
 
 </body>
 </html>

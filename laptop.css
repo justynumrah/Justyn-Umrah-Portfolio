@@ -1,8 +1,11 @@
+/* Styles for the navigation links -- Laptop */
 .nav-links {
-    display: inline-block;
-    gap: 150px;
+    display: inline-block; /* Displays the list horizontally but keeps block-like behavior */
+    gap: 150px; /* Adds space between each navigation link */
 }
+
+/* Styles for the main content area -- Laptop*/
 main {
-    padding: 20px;
-    font-size: 18px;
+    padding: 20px; /* Adds space inside the main content area */
+    font-size: 18px; /* Sets the text size for readability */
 }

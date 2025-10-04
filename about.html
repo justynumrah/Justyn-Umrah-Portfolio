@@ -1,66 +1,84 @@
 <!DOCTYPE html>
-<!--Start of document, language set to English-->
+<!-- Declares the document type as HTML5 -->
 <html lang="en">
+<!-- Sets the document language to English -->
 
-<!--Head section (title and links)-->
+<!-- Head section: includes metadata and links -->
 <head>
-    <!--Character encoding for special characters-->
+    <!-- Character encoding for special characters -->
     <meta charset="UTF-8">
-    <!--Makes sure page is responsive for all devices-->
+    <!-- Ensures the page scales correctly on all devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Title shown in the browser-->
+    <!-- Title shown on the browser tab -->
     <title>Justyn's Portfolio - About Me</title>
-    <!--Link to the external CSS file for styling-->
+    <!-- Link to the main CSS stylesheet -->
     <link rel="stylesheet" href="style.css">
+
     <style>
-        /*The header style */
-       header {
-    background: linear-gradient(45deg, white, black); /* diagonal gradient */
-    color: white;
-    padding: 15px;
-    text-align: center;
-}
-</style>
+        /* Styles for the header section */
+        header {
+            background: linear-gradient(45deg, white, black); /* Diagonal color gradient */
+            color: white; /* Sets the text color to white */
+            padding: 15px; /* Adds space inside the header */
+            text-align: center; /* Centers the text horizontally */
+        }
+    </style>
 </head>
+
+<!-- Body section: contains all visible content -->
 <body>
-    <!--My navigation bar-->
-    <nav class ="navbar">
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <!-- Logo image -->
         <img src="boondocks.png" alt="Boondocks avatar" class="logo">
-        <!--unordered list to structure menu items hor. or vert.-->
+        <!-- Unordered list for navigation links -->
         <ul class="nav-links">
-            <!--each list item contains a link to another page-->
-            <li><a href="home.html">Home</a><!--Link to the home page--></li>
-            <li><a href="about.html">About</a><!--Link to the about page--></li>
-            <li><a href="projects.html">Projects</a><!--Link to the projects page--></li>
-            <li><a href="contact.html">Contact</a><!--Link to the contact page--></li>
+            <!-- Each list item links to a page on the site -->
+            <li><a href="home.html">Home</a><!-- Link to Home page --></li>
+            <li><a href="about.html">About</a><!-- Link to About page --></li>
+            <li><a href="projects.html">Projects</a><!-- Link to Projects page --></li>
+            <li><a href="contact.html">Contact</a><!-- Link to Contact page --></li>
         </ul>
     </nav>
+
+    <!-- Main content section -->
     <main>
+        <!-- Page header -->
         <header>
-        <h1>About Me</h1>
+            <h1>About Me</h1>
         </header>
+
+        <!-- Personal image -->
         <img src="Basketball.png" alt="Justyn's Photo" width="250">
-        <p>Hey Everyone! My name is Justyn Umrah. I am studying cybersecurity and web development. I enjoy learning about new technologies, solving complex problems, and building projects like this!. My hobbies are playing basketball, watching movies, and playing videogames.</p>
+
+        <!-- Personal introduction paragraph -->
+        <p>
+            Hey Everyone! My name is Justyn Umrah. I am studying cybersecurity and web development. 
+            I enjoy learning about new technologies, solving complex problems, and building projects like this! 
+            My hobbies are playing basketball, watching movies, and playing video games.
+        </p>
         
-        <video id="MyVideo" width="400" poster="Basketball.png" controls> <!--image that shoes before the video starts-->
+        <!-- Embedded video with a poster image before it starts -->
+        <video id="MyVideo" width="400" poster="Basketball.png" controls>
             <source src="Video.mp4" type="video/mp4">
         </video>
-
-
     </main>
-    
-        <div style="text-align: left; padding-left: 5px;"></div>
-        
 
+    <!-- Small div to control spacing and alignment -->
+    <div style="text-align: left; padding-left: 5px;"></div>
+
+    <!-- Footer section -->
     <footer class="about-footer">
-    <div style="background-color: #333; color: white; text-align: center; padding: 20px;">
-        <img src="boondocks.png" alt="My Avatar" style="width: 80px; height: 80px; border-radius: 50%;">
-        <p>My name is Justyn Umrah</p>
-        <p>Contact: <a href="mailto:justyn.umrah@ontariotechu.net" style="color: lightblue;">justyn.umrah@ontariotechu.net</a></p>
-        <p>&copy; 2025 by <strong>Justyn Umrah</strong></p>
-    </div>
-</footer>
-
-
+        <!-- Footer container -->
+        <div style="background-color: #333; color: white; text-align: center; padding: 20px;">
+            <!-- Avatar image -->
+            <img src="boondocks.png" alt="My Avatar" style="width: 80px; height: 80px; border-radius: 50%;">
+            <!-- Name and contact info -->
+            <p>My name is Justyn Umrah</p>
+            <p>Contact: <a href="mailto:justyn.umrah@ontariotechu.net" style="color: lightblue;">justyn.umrah@ontariotechu.net</a></p>
+            <!-- Copyright -->
+            <p>&copy; 2025 by <strong>Justyn Umrah</strong></p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -12,54 +12,72 @@
     <title>Justyn's Portfolio - Contacts</title>
     <!--Link to the external CSS file for styling-->
     <link rel="stylesheet" href="style.css">
-    
+    <!--Could also link responsive CSS files here (mobile, tablet, laptop) for full responsiveness-->
 </head>
+
 <body class="contact-page">
     <!--My navigation bar-->
-    <nav class ="navbar">
-        
+    <nav class="navbar">
         <img src="boondocks.png" alt="Boondocks avatar" class="logo">
+        <!--Alt text is clear and describes the image properly-->
         <!--unordered list to structure menu items hor. or vert.-->
         <ul class="nav-links">
             <!--each list item contains a link to another page-->
             <li><a href="home.html">Home</a><!--Link to the home page--></li>
             <li><a href="about.html">About</a><!--Link to the about page--></li>
             <li><a href="projects.html">Projects</a><!--Link to the projects page--></li>
-            <li><a href="contact.html">Contact</a><!--Link to the contact page--></li>
+            <li><a href="contact.html" aria-current="page">Contact</a><!--Link to the contact page--></li>
+            <!--Added aria-current attribute to show the current page for accessibility-->
         </ul>
     </nav>
 
     <!--Main content of the page-->
     <main>
         <p>Send me your questions, comments and project related queries!</p>
-       <form id="contact-form" action="#" method="post">
-        <label for="name">Your Name:</label> <!--Label for email input-->
-        <input type="text" id="name" name="name" required placeholder="Enter your name"> <!--Text input for name, required field-->
+        <!--Introductory message explaining the purpose of the form-->
 
-        <label for="email">Your Email:</label> <!--Label for email input-->
-        <input type="email" id="email" name="email" required placeholder="Enter your email"> <!--Email input with validation-->
+        <form id="contact-form" action="#" method="post">
+            <!--Form starts here; action is currently set to # (no backend yet)-->
 
-        <label for="phone">Cell No.:</label> <!--Label for phone input-->
-        <input type="text" id="phone" name="phone" required placeholder="Enter your email"> <!--Email input with validation-->
+            <label for="name">Your Name:</label> <!--Label for name input-->
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+            <!--Text input for name, required field-->
 
-        <label for="message">Message:</label> <!--Label for user message input-->
-        <textarea id="message" name="message" rows="5" required placeholder="Enter your message"></textarea> <!--Text input for name, required field-->
+            <label for="email">Your Email:</label> <!--Label for email input-->
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+            <!--Email input with validation-->
 
-        <label for="message">*What is 2+2? (So I know you are not a robot)</label> <!--Label for user message input-->
-        <input type="text" id="captcha" name="captcha" required placeholder="Enter your answer"><!--Text input for name, required field-->
+            <label for="phone">Cell No.:</label> <!--Label for phone input-->
+            <input type="text" id="phone" name="phone" required placeholder="Enter your phone number">
+            <!--Corrected placeholder to match phone input-->
 
-        <button type="submit">Submit</button> <!--Submit button-->
-       </form>
+            <label for="message">Message:</label> <!--Label for user message input-->
+            <textarea id="message" name="message" rows="5" required placeholder="Enter your message"></textarea>
+            <!--Text area for user’s message, required field-->
+
+            <label for="captcha">*What is 2+2? (So I know you are not a robot)</label>
+            <!--Simple spam prevention question-->
+            <input type="text" id="captcha" name="captcha" required placeholder="Enter your answer">
+            <!--Input for CAPTCHA question, required-->
+
+            <button type="submit">Submit</button> <!--Submit button for the form-->
+            <!--Consider adding an aria-label for screen readers if needed-->
+        </form>
     </main>
-         <footer>
-    <div style="background-color: #333; color: white; text-align: center; padding: 20px;">
-        <img src="boondocks.png" alt="My Avatar" style="width: 80px; height: 80px; border-radius: 50%;">
-        <p>My name is Justyn Umrah</p>
-        <p>Contact: <a href="mailto:justyn.umrah@ontariotechu.net" style="color: lightblue;">justyn.umrah@ontariotechu.net</a></p>
-        <p>&copy; 2025 by <strong>Justyn Umrah</strong></p>
-    </div>
-</footer>
 
-    </body>
-    </html>
-    
+    <footer>
+        <div style="background-color: #333; color: white; text-align: center; padding: 20px;">
+            <!--Inline CSS used here; could be moved to external CSS file for better structure-->
+            <img src="boondocks.png" alt="My Avatar" style="width: 80px; height: 80px; border-radius: 50%;">
+            <!--Footer image with rounded border for profile picture-->
+            <p>My name is Justyn Umrah</p>
+            <!--Simple self-identification-->
+            <p>Contact: <a href="mailto:justyn.umrah@ontariotechu.net" style="color: lightblue;">justyn.umrah@ontariotechu.net</a></p>
+            <!--Email link that opens default mail app-->
+            <p>&copy; 2025 by <strong>Justyn Umrah</strong></p>
+            <!--Copyright statement-->
+        </div>
+    </footer>
+
+</body>
+</html>
